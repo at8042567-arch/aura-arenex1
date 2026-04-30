@@ -32,7 +32,7 @@ export default function SaasTools() {
 
       <section className="container py-12">
         <div className="text-center text-xs uppercase tracking-[0.3em] text-secondary font-semibold mb-6">OUR FLAGSHIP TOOL</div>
-        <div className="glass-card p-8 lg:p-12 grid lg:grid-cols-2 gap-10">
+        <div className="glass-card scroll-reveal-scale p-8 lg:p-12 grid lg:grid-cols-2 gap-10">
           <div>
             <div className="flex items-center gap-5 mb-6">
               <div className="w-20 h-20 rounded-2xl border border-primary/60 flex items-center justify-center bg-background shadow-[0_0_30px_hsl(55_100%_60%/0.25)]">
@@ -54,8 +54,8 @@ export default function SaasTools() {
             </a>
           </div>
           <div className="lg:border-l lg:border-border/60 lg:pl-10 space-y-6">
-            {features.map((f) => (
-              <div key={f.title} className="flex items-start gap-4">
+            {features.map((f, i) => (
+              <div key={f.title} className={`flex items-start gap-4 scroll-reveal stagger-${i + 1}`}>
                 <span className="icon-circle !w-12 !h-12 shrink-0"><f.icon className="w-5 h-5" /></span>
                 <div>
                   <h4 className="font-bold mb-1">{f.title}</h4>
@@ -66,7 +66,7 @@ export default function SaasTools() {
           </div>
         </div>
 
-        <div className="glass-card mt-8 px-8 py-4 flex items-center justify-center gap-3 max-w-xl mx-auto">
+        <div className="glass-card scroll-reveal mt-8 px-8 py-4 flex items-center justify-center gap-3 max-w-xl mx-auto">
           <Lock className="w-4 h-4 text-primary" />
           <span className="text-sm text-foreground/85">Trusted by developers and users worldwide.</span>
         </div>

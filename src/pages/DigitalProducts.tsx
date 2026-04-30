@@ -54,8 +54,8 @@ export default function DigitalProducts() {
           <h2 className="text-4xl lg:text-5xl font-bold">Explore Our Digital Products</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
-          {products.map((p) => (
-            <div key={p.title} className="glass-card p-7 hover-glow flex flex-col">
+          {products.map((p, i) => (
+            <div key={p.title} className={`glass-card scroll-reveal stagger-${i + 1} p-7 hover-glow flex flex-col`}>
               <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/15 border border-primary/40 text-primary mb-6">
                 <p.icon className="w-5 h-5" />
               </span>
@@ -76,9 +76,9 @@ export default function DigitalProducts() {
           ))}
         </div>
 
-        <div className="glass-card mt-10 p-7 grid md:grid-cols-3 gap-6">
-          {benefits.map((b) => (
-            <div key={b.title} className="flex items-start gap-4">
+        <div className="glass-card scroll-reveal mt-10 p-7 grid md:grid-cols-3 gap-6">
+          {benefits.map((b, i) => (
+            <div key={b.title} className={`flex items-start gap-4 scroll-reveal stagger-${i + 1}`}>
               <span className="icon-circle !w-12 !h-12 shrink-0"><b.icon className="w-5 h-5" /></span>
               <div>
                 <h4 className="font-bold mb-1">{b.title}</h4>

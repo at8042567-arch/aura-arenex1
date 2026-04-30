@@ -51,8 +51,8 @@ export default function Services() {
           <h2 className="text-4xl lg:text-5xl font-bold">Our Services</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
-          {services.map((s) => (
-            <div key={s.title} className="glass-card p-7 hover-glow">
+          {services.map((s, i) => (
+            <div key={s.title} className={`glass-card scroll-reveal stagger-${i + 1} p-7 hover-glow`}>
               <span className="icon-circle mb-6"><s.icon className="w-6 h-6" /></span>
               <h3 className="text-xl font-bold mb-3">{s.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">{s.desc}</p>

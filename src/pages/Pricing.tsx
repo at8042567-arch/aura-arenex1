@@ -72,10 +72,10 @@ export default function Pricing() {
 
       <section className="container py-12">
         <div className="grid md:grid-cols-3 gap-6 items-stretch">
-          {plans.map((p) => (
+          {plans.map((p, i) => (
             <div
               key={p.name}
-              className={`relative glass-card p-7 flex flex-col ${
+              className={`relative glass-card scroll-reveal stagger-${i + 1} p-7 flex flex-col ${
                 p.popular ? "border-primary/60 shadow-glow-yellow scale-[1.02]" : ""
               }`}
             >
@@ -107,7 +107,7 @@ export default function Pricing() {
           ))}
         </div>
 
-        <div className="glass-card mt-12 p-8 grid lg:grid-cols-2 gap-10">
+        <div className="glass-card scroll-reveal mt-12 p-8 grid lg:grid-cols-2 gap-10">
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-secondary font-semibold mb-4">FAQ</div>
             <div>{faqs.map((f) => <FaqItem key={f.q} {...f} />)}</div>
