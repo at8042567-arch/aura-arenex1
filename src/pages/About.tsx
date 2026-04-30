@@ -15,7 +15,7 @@ export default function About() {
 
       {/* Founder */}
       <section className="container py-6">
-        <div className="glass-card p-7 lg:p-10 grid md:grid-cols-[280px_1fr] gap-8 items-start">
+        <div className="glass-card scroll-reveal-scale p-7 lg:p-10 grid md:grid-cols-[280px_1fr] gap-8 items-start">
           <img src={founder} alt="Abdulrehman Tariq, Founder" loading="lazy" width={768} height={896} className="rounded-2xl w-full h-full object-cover border border-primary/40 shadow-[0_0_40px_hsl(55_100%_60%/0.15)]" />
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-secondary font-semibold mb-3">FOUNDER</div>
@@ -34,7 +34,7 @@ export default function About() {
 
       {/* Co-founder */}
       <section className="container py-6">
-        <div className="glass-card p-7 lg:p-10 grid md:grid-cols-2 gap-8 items-center">
+        <div className="glass-card scroll-reveal-scale p-7 lg:p-10 grid md:grid-cols-2 gap-8 items-center">
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-secondary font-semibold mb-3">CO-FOUNDER</div>
             <h2 className="text-3xl lg:text-4xl font-bold mb-3">Anees Ahmad</h2>
@@ -53,7 +53,7 @@ export default function About() {
 
       {/* Connect */}
       <section className="container py-6">
-        <div className="glass-card p-8 lg:p-12">
+        <div className="glass-card scroll-reveal p-8 lg:p-12">
           <div className="text-center mb-8">
             <div className="text-xs uppercase tracking-[0.3em] text-secondary font-semibold mb-3">GET IN TOUCH</div>
             <h2 className="text-3xl lg:text-4xl font-bold">Let's Connect</h2>
