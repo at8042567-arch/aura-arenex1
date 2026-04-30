@@ -49,7 +49,7 @@ export default function SaasTools() {
             <p className="text-muted-foreground leading-relaxed mb-8">
               ArgonCore is a fast, reliable and open-source video downloader that helps you download videos from 50+ platforms in the highest quality.
             </p>
-            <a href="https://argoncore.example.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://argoncore.online" target="_blank" rel="noopener noreferrer">
               <NeonButton>Visit Site</NeonButton>
             </a>
           </div>

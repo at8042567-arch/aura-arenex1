@@ -1,4 +1,4 @@
-import heroLogo from "@/assets/hero-logo.jpg";
+import heroLogo from "@/assets/hero-logo.png";
 import workLaptop from "@/assets/work-laptop.jpg";
 import workPerson from "@/assets/work-person.jpg";
 import workAbstract from "@/assets/work-abstract.jpg";

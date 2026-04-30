@@ -1,4 +1,4 @@
-import heroLogo from "@/assets/hero-logo.jpg";
+import heroLogo from "@/assets/hero-logo.png";
 import { NeonButton } from "@/components/site/NeonButton";
 import { Monitor, Code2, Pencil, Check } from "lucide-react";
 import { Link } from "react-router-dom";

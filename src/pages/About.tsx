@@ -1,5 +1,5 @@
 import founder from "@/assets/founder.jpg";
-import heroLogo from "@/assets/hero-logo.jpg";
+import heroLogo from "@/assets/hero-logo.png";
 import { Instagram, MessageCircle } from "lucide-react";
 
 export default function About() {
