@@ -28,15 +28,14 @@ export default function Home() {
               WELCOME TO ARENEX<span className="text-primary">TECHWORKS</span>
             </span>
             <h1 className="text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-4">
-              Building the Future<br />of Digital Innovation<span className="text-primary">.</span>
+              Building High-Performance<br />Websites for Modern<br />Businesses<span className="text-primary">.</span>
             </h1>
-            <h2 className="text-3xl lg:text-4xl font-semibold text-muted-foreground mb-6">From Anywhere.</h2>
             <p className="text-base text-muted-foreground max-w-md mb-9 leading-relaxed">
-              We build modern websites and powerful SaaS tools that help businesses grow faster and smarter.
+              We help startups, businesses, and brands create powerful digital experiences through custom web development.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/services"><NeonButton>Explore Services</NeonButton></Link>
-              <Link to="/pricing"><NeonButton variant="outline">View Pricing</NeonButton></Link>
+              <Link to="/portfolio"><NeonButton>View Our Work</NeonButton></Link>
+              <Link to="/contact"><NeonButton variant="outline">Get Started</NeonButton></Link>
             </div>
           </div>
           <div className="relative">
@@ -52,9 +51,9 @@ export default function Home() {
           <div className="absolute -inset-px bg-gradient-radial-glow opacity-40 blur-2xl pointer-events-none" />
           <Stat icon={Box} value="20+" label="Projects Completed" />
           <div className="hidden md:block w-px bg-border/60 absolute left-1/3 top-6 bottom-6" />
-          <Stat icon={Code2} value="5+" label="Tools Built" />
+          <Stat icon={Code2} value="100%" label="Responsive Builds" />
           <div className="hidden md:block w-px bg-border/60 absolute left-2/3 top-6 bottom-6" />
-          <Stat icon={Layers} value="3000+" label="Assets Delivered" />
+          <Stat icon={Layers} value="5★" label="Client Satisfaction" />
         </div>
       </section>
 
@@ -69,10 +68,10 @@ export default function Home() {
           <div className="scroll-reveal">
             <div className="text-xs uppercase tracking-[0.3em] text-secondary font-semibold mb-3">WHAT WE DO</div>
             <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-5">
-              We build digital<br />solutions that<br />actually work<span className="text-primary">.</span>
+              Custom web<br />development that<br />drives growth<span className="text-primary">.</span>
             </h2>
             <p className="text-muted-foreground max-w-md mb-8 leading-relaxed">
-              From modern websites to powerful SaaS tools, we create fast, scalable and user-focused digital experiences.
+              From business websites to powerful web applications and e-commerce stores, we build fast, scalable and conversion-focused experiences.
             </p>
             <Link to="/services" className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
               Explore Services <ArrowUpRight className="w-4 h-4" />
