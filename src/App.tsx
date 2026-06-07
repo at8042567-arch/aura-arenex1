@@ -7,7 +7,6 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
 import Pricing from "./pages/Pricing";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
@@ -27,7 +26,7 @@ const App = () => (
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<About />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
