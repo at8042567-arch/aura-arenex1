@@ -12,7 +12,7 @@ export const Footer = () => (
           <Link to="/services" className="hover:text-primary">Services</Link>
           <Link to="/portfolio" className="hover:text-primary">Portfolio</Link>
           <Link to="/pricing" className="hover:text-primary">Pricing</Link>
-          <Link to="/contact" className="hover:text-primary">Contact</Link>
+          <Link to="/about" className="hover:text-primary">About</Link>
         </div>
         <div className="flex gap-3 text-muted-foreground">
           <a href="https://instagram.com/arenextechworks" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-primary transition-colors"><Instagram className="w-4 h-4" /></a>
