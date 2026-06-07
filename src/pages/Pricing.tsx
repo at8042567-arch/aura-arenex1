@@ -6,24 +6,24 @@ import { ChevronDown } from "lucide-react";
 
 const plans = [
   {
-    icon: Send, name: "Basic Website",
-    desc: "Perfect for individuals and small businesses getting started online.",
+    icon: Send, name: "Starter Website",
+    desc: "Suitable for small businesses and personal brands looking to launch online.",
     price: "Starter", note: "Project based",
-    items: ["Up to 5 Pages", "Responsive Design", "Basic SEO Setup", "Contact Form"],
+    items: ["Up to 5 Pages", "Responsive Design", "Basic SEO Setup", "Contact Form", "1 Revision Round"],
     popular: false,
   },
   {
-    icon: Rocket, name: "Standard Website",
-    desc: "Everything you need for a growing business with a professional presence.",
-    price: "Standard", note: "Project based",
+    icon: Rocket, name: "Business Website",
+    desc: "Suitable for growing businesses requiring a professional, conversion-ready online presence.",
+    price: "Business", note: "Project based",
     items: ["Up to 12 Pages", "Custom Design & CMS", "Advanced SEO", "Performance Optimized", "30 Days Support"],
     popular: true,
   },
   {
-    icon: Crown, name: "Premium / SaaS",
-    desc: "Advanced custom builds, web apps and full SaaS solutions tailored to you.",
-    price: "Premium", note: "Quote on request",
-    items: ["Custom Web App / SaaS", "Authentication & Database", "Admin Dashboard", "Scalable Architecture", "Priority Support"],
+    icon: Crown, name: "Custom Web Application",
+    desc: "Suitable for advanced custom solutions with unique functionality and scalable architecture.",
+    price: "Custom", note: "Quote on request",
+    items: ["Custom Web Application", "Authentication & Database", "Admin Dashboard", "Scalable Architecture", "Priority Support"],
     popular: false,
   },
 ];

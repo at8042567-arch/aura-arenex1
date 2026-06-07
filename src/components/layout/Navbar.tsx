@@ -6,10 +6,10 @@ import { Logo } from "@/components/site/Logo";
 const links = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
-  { to: "/saas-tools", label: "SaaS Tools" },
-  { to: "/digital-products", label: "Digital Products" },
+  { to: "/portfolio", label: "Portfolio" },
   { to: "/pricing", label: "Pricing" },
   { to: "/about", label: "About" },
+  { to: "/contact", label: "Contact" },
 ];
 
 export const Navbar = () => {

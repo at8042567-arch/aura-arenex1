@@ -1,23 +1,38 @@
 import heroLogo from "@/assets/hero-logo.png";
 import { NeonButton } from "@/components/site/NeonButton";
-import { Monitor, Code2, Pencil, Check } from "lucide-react";
+import { Monitor, Briefcase, ShoppingCart, LayoutDashboard, Wrench, Sparkles, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const services = [
   {
-    icon: Monitor, title: "Web Development",
-    desc: "We build modern, fast and responsive websites that deliver exceptional performance and user experience.",
-    items: ["Custom Websites", "Responsive Design", "Performance Optimized", "SEO Friendly"],
+    icon: Monitor, title: "Custom Website Development",
+    desc: "Tailor-made websites engineered for speed, scalability, and a premium brand experience across every device.",
+    items: ["Fully Custom Design", "Responsive & Mobile First", "Performance Optimized", "SEO Ready"],
   },
   {
-    icon: Code2, title: "SaaS Development",
-    desc: "We create powerful SaaS tools and applications that solve real problems and scale with your business.",
-    items: ["Custom SaaS Solutions", "Scalable Architecture", "Secure & Reliable", "API Integrations"],
+    icon: Briefcase, title: "Business Websites",
+    desc: "Professional websites built to establish credibility, generate leads, and grow your business online.",
+    items: ["Lead Generation Focused", "Modern UI", "CMS Integration", "Analytics Ready"],
   },
   {
-    icon: Pencil, title: "UI/UX Design",
-    desc: "We design clean, intuitive and modern interfaces that provide amazing user experiences.",
-    items: ["User Research", "Wireframing & Prototyping", "UI/UX Design", "User Testing"],
+    icon: ShoppingCart, title: "E-Commerce Websites",
+    desc: "Conversion-driven online stores with smooth checkout flows, scalable catalogs, and secure payments.",
+    items: ["Custom Storefronts", "Payment Integrations", "Inventory Management", "Mobile Optimized"],
+  },
+  {
+    icon: LayoutDashboard, title: "Web Applications",
+    desc: "Scalable, modern web applications built with clean architecture and powerful functionality.",
+    items: ["Custom Dashboards", "Authentication & Roles", "API Integrations", "Scalable Architecture"],
+  },
+  {
+    icon: Wrench, title: "Website Maintenance & Support",
+    desc: "Ongoing maintenance, updates, and performance care to keep your website fast, secure, and reliable.",
+    items: ["Security Updates", "Performance Monitoring", "Bug Fixes", "Priority Support"],
+  },
+  {
+    icon: Sparkles, title: "AI Integration",
+    desc: "Optional add-on to enhance your website with smart AI features like chat, search, and automation.",
+    items: ["AI Chat Assistants", "Smart Search", "Content Automation", "Custom AI Workflows"],
   },
 ];
 
@@ -31,12 +46,12 @@ export default function Services() {
               <span className="w-1.5 h-1.5 rounded-full bg-primary" /> OUR SERVICES
             </span>
             <h1 className="text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-5">
-              We Build Digital<br />Solutions That Drive<br />Real Results<span className="text-primary">.</span>
+              Modern Web<br />Development That<br />Drives Growth<span className="text-primary">.</span>
             </h1>
             <p className="text-muted-foreground max-w-md mb-8">
-              From modern websites to powerful SaaS tools, we help businesses grow with technology that actually works.
+              From business websites to advanced web applications, we build fast, scalable, and conversion-focused digital experiences.
             </p>
-            <Link to="/about"><NeonButton>Let's Work Together</NeonButton></Link>
+            <Link to="/contact"><NeonButton>Let's Work Together</NeonButton></Link>
           </div>
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-radial-glow blur-3xl" />
@@ -50,9 +65,9 @@ export default function Services() {
           <div className="text-xs uppercase tracking-[0.3em] text-secondary font-semibold mb-3">WHAT WE DO</div>
           <h2 className="text-4xl lg:text-5xl font-bold">Our Services</h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s, i) => (
-            <div key={s.title} className={`glass-card scroll-reveal stagger-${i + 1} p-7 hover-glow`}>
+            <div key={s.title} className={`glass-card scroll-reveal stagger-${(i % 6) + 1} p-7 hover-glow`}>
               <span className="icon-circle mb-6"><s.icon className="w-6 h-6" /></span>
               <h3 className="text-xl font-bold mb-3">{s.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">{s.desc}</p>
