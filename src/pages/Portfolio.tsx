@@ -35,6 +35,24 @@ const projects = [
 export default function Portfolio() {
   return (
     <>
+      <Seo
+        title="Portfolio | Arenex Techworks Web Development Projects"
+        description="Explore featured websites and web applications built by Arenex Techworks, including CyberCreatix AI Hub, ArgonCore, and SDS Buds."
+        path="/portfolio"
+        breadcrumbs={[{ name: "Home", path: "/" }, { name: "Portfolio", path: "/portfolio" }]}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Arenex Techworks Portfolio",
+          hasPart: projects.map((p) => ({
+            "@type": "CreativeWork",
+            name: p.name,
+            url: p.url,
+            description: p.description,
+            image: p.image,
+          })),
+        }}
+      />
       <section className="container pt-12 lg:pt-20 pb-10 text-center">
         <div className="text-xs uppercase tracking-[0.3em] text-secondary font-semibold mb-4">PORTFOLIO</div>
         <h1 className="text-5xl lg:text-6xl font-extrabold leading-[1.05] mb-5">

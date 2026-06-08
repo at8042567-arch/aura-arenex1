@@ -52,6 +52,21 @@ const FaqItem = ({ q, a }: { q: string; a: string }) => {
 export default function Pricing() {
   return (
     <>
+      <Seo
+        title="Pricing | Arenex Techworks Web Development Plans"
+        description="Simple project-based pricing for Starter Websites, Business Websites, and Custom Web Applications by Arenex Techworks."
+        path="/pricing"
+        breadcrumbs={[{ name: "Home", path: "/" }, { name: "Pricing", path: "/pricing" }]}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }}
+      />
       <section className="container pt-12 lg:pt-20 pb-12">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="reveal">
