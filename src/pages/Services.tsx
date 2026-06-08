@@ -2,6 +2,7 @@ import heroLogoAsset from "@/assets/hero-logo-3d.png.asset.json";
 import { NeonButton } from "@/components/site/NeonButton";
 import { Monitor, Briefcase, ShoppingCart, LayoutDashboard, Wrench, Sparkles, Check } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Seo } from "@/components/site/Seo";
 
 const services = [
   {

@@ -3,6 +3,7 @@ import { NeonButton } from "@/components/site/NeonButton";
 import { Send, Rocket, Crown, Check, Shield } from "lucide-react";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { Seo } from "@/components/site/Seo";
 
 const plans = [
   {

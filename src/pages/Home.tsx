@@ -5,6 +5,7 @@ import workAbstract from "@/assets/work-abstract.jpg.asset.json";
 import { NeonButton } from "@/components/site/NeonButton";
 import { Box, Code2, Layers, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Seo } from "@/components/site/Seo";
 
 const Stat = ({ icon: Icon, value, label }: any) => (
   <div className="flex items-center gap-4">
@@ -19,6 +20,11 @@ const Stat = ({ icon: Icon, value, label }: any) => (
 export default function Home() {
   return (
     <>
+      <Seo
+        title="Arenex Techworks | Custom Website Development Company"
+        description="Arenex Techworks builds high-performance custom websites, business sites, e-commerce stores, and web applications for modern brands."
+        path="/"
+      />
       {/* HERO */}
       <section className="container relative pt-12 lg:pt-20 pb-16">
         <div className="grid lg:grid-cols-2 gap-10 items-center">

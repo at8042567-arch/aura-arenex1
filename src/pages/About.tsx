@@ -4,6 +4,7 @@ import { useState } from "react";
 import { NeonButton } from "@/components/site/NeonButton";
 import { toast } from "sonner";
 import { z } from "zod";
+import { Seo } from "@/components/site/Seo";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),

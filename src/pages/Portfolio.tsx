@@ -3,6 +3,7 @@ import { ArrowUpRight, Globe } from "lucide-react";
 import cyberShot from "@/assets/cybercreatix-screenshot.png.asset.json";
 import argonShot from "@/assets/argoncore-screenshot.png.asset.json";
 import sdsShot from "@/assets/sdsbuds-screenshot.png.asset.json";
+import { Seo } from "@/components/site/Seo";
 
 const projects = [
   {
