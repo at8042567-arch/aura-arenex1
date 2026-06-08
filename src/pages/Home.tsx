@@ -1,7 +1,7 @@
 import heroLogoAsset from "@/assets/hero-logo-3d.png.asset.json";
-import argonShot from "@/assets/argoncore-screenshot.png.asset.json";
-import sdsShot from "@/assets/sdsbuds-screenshot.png.asset.json";
-import cyberShot from "@/assets/cybercreatix-screenshot.png.asset.json";
+import workLaptop from "@/assets/work-laptop.jpg.asset.json";
+import workPerson from "@/assets/work-person.jpg.asset.json";
+import workAbstract from "@/assets/work-abstract.jpg.asset.json";
 import { NeonButton } from "@/components/site/NeonButton";
 import { Box, Code2, Layers, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -61,9 +61,9 @@ export default function Home() {
       <section className="container py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="grid grid-cols-2 gap-4">
-            <img src={argonShot.url} alt="ArgonCore web application by Arenex Techworks" loading="lazy" className="scroll-reveal stagger-1 rounded-2xl row-span-2 h-full w-full object-cover border border-border/50" />
-            <img src={cyberShot.url} alt="CyberCreatix AI Hub website by Arenex Techworks" loading="lazy" className="scroll-reveal stagger-2 rounded-2xl object-cover h-full w-full border border-border/50" />
-            <img src={sdsShot.url} alt="SDS Buds business website by Arenex Techworks" loading="lazy" className="scroll-reveal stagger-3 rounded-2xl object-cover h-full w-full border border-border/50" />
+            <img src={workLaptop.url} alt="Developer laptop with code at night" loading="lazy" className="scroll-reveal stagger-1 rounded-2xl row-span-2 h-full w-full object-cover border border-border/50" />
+            <img src={workPerson.url} alt="Silhouette of a developer at sunset" loading="lazy" className="scroll-reveal stagger-2 rounded-2xl object-cover h-full w-full border border-border/50" />
+            <img src={workAbstract.url} alt="Abstract neon peak on dark background" loading="lazy" className="scroll-reveal stagger-3 rounded-2xl object-cover h-full w-full border border-border/50" />
           </div>
           <div className="scroll-reveal">
             <div className="text-xs uppercase tracking-[0.3em] text-secondary font-semibold mb-3">WHAT WE DO</div>
