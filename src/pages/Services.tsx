@@ -2,6 +2,7 @@ import heroLogoAsset from "@/assets/hero-logo-3d.png.asset.json";
 import { NeonButton } from "@/components/site/NeonButton";
 import { Monitor, Briefcase, ShoppingCart, LayoutDashboard, Wrench, Sparkles, Check } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Seo } from "@/components/site/Seo";
 
 const services = [
   {
@@ -39,6 +40,22 @@ const services = [
 export default function Services() {
   return (
     <>
+      <Seo
+        title="Web Development Services | Arenex Techworks"
+        description="Custom website development, business websites, e-commerce, web apps, maintenance, and AI integration by Arenex Techworks."
+        path="/services"
+        breadcrumbs={[{ name: "Home", path: "/" }, { name: "Services", path: "/services" }]}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Arenex Techworks Services",
+          itemListElement: services.map((s, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            item: { "@type": "Service", name: s.title, description: s.desc, provider: { "@type": "Organization", name: "Arenex Techworks" } },
+          })),
+        }}
+      />
       <section className="container pt-12 lg:pt-20 pb-12">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="reveal">

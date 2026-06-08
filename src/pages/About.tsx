@@ -4,6 +4,7 @@ import { useState } from "react";
 import { NeonButton } from "@/components/site/NeonButton";
 import { toast } from "sonner";
 import { z } from "zod";
+import { Seo } from "@/components/site/Seo";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
@@ -27,6 +28,24 @@ export default function About() {
 
   return (
     <>
+      <Seo
+        title="About & Contact | Arenex Techworks"
+        description="Learn about Arenex Techworks, founded by Abdulrehman Tariq, and get in touch via WhatsApp, email, Instagram, or X."
+        path="/about"
+        breadcrumbs={[{ name: "Home", path: "/" }, { name: "About", path: "/about" }]}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          name: "About Arenex Techworks",
+          mainEntity: {
+            "@type": "Person",
+            name: "Abdulrehman Tariq",
+            jobTitle: "Founder",
+            worksFor: { "@type": "Organization", name: "Arenex Techworks" },
+            sameAs: ["https://instagram.com/arenextechworks", "https://x.com/arenextechworks"],
+          },
+        }}
+      />
       <section className="container pt-12 lg:pt-20 pb-12 text-center">
         <div className="text-xs uppercase tracking-[0.3em] text-secondary font-semibold mb-4">ABOUT ARENEX TECHWORKS</div>
         <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight mb-4">
