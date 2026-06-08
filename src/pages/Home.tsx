@@ -1,4 +1,4 @@
-import heroLogo from "@/assets/hero-logo.png";
+import heroLogoAsset from "@/assets/hero-logo-3d.png.asset.json";
 import workLaptop from "@/assets/work-laptop.jpg";
 import workPerson from "@/assets/work-person.jpg";
 import workAbstract from "@/assets/work-abstract.jpg";
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-radial-glow blur-3xl" />
-            <img src={heroLogo} alt="Arenex Techworks 3D logo" width={1024} height={1024} className="relative w-full max-w-[560px] mx-auto float-slow" />
+            <img src={heroLogoAsset.url} alt="Arenex Techworks 3D logo on neon podium" width={1280} height={1024} className="relative w-full max-w-[640px] mx-auto float-slow" />
           </div>
         </div>
       </section>

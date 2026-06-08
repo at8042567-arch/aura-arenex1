@@ -1,8 +1,8 @@
 import { NeonButton } from "@/components/site/NeonButton";
 import { ArrowUpRight, Globe } from "lucide-react";
-import workLaptop from "@/assets/work-laptop.jpg";
-import workAbstract from "@/assets/work-abstract.jpg";
-import workPerson from "@/assets/work-person.jpg";
+import cyberShot from "@/assets/cybercreatix-screenshot.png.asset.json";
+import argonShot from "@/assets/argoncore-screenshot.png.asset.json";
+import sdsShot from "@/assets/sdsbuds-screenshot.png.asset.json";
 
 const projects = [
   {
@@ -11,7 +11,7 @@ const projects = [
     category: "Web Platform",
     description: "A modern AI tools discovery platform designed to help users explore and discover useful AI tools.",
     tech: ["Next.js", "React", "Tailwind CSS"],
-    image: workAbstract,
+    image: cyberShot.url,
   },
   {
     name: "ArgonCore",
@@ -19,7 +19,7 @@ const projects = [
     category: "Web Application",
     description: "A modern web application with a clean user experience and responsive architecture.",
     tech: ["Next.js", "JavaScript"],
-    image: workLaptop,
+    image: argonShot.url,
   },
   {
     name: "SDS Buds",
@@ -27,7 +27,7 @@ const projects = [
     category: "Business Website",
     description: "A professional business website focused on branding, responsiveness, and user experience.",
     tech: ["React", "Tailwind CSS"],
-    image: workPerson,
+    image: sdsShot.url,
   },
 ];
 

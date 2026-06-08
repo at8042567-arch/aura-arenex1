@@ -111,10 +111,10 @@ export default function About() {
                 <h3 className="text-base font-bold mb-1">X (Twitter)</h3>
                 <p className="text-xs text-muted-foreground">@arenextechworks</p>
               </a>
-              <a href="https://aura-arenex1.lovable.app" target="_blank" rel="noopener noreferrer" className="sm:col-span-2 flex flex-col items-center text-center group hover-glow rounded-2xl p-6 border border-border/60">
+              <a href="https://arenextechworks.com" target="_blank" rel="noopener noreferrer" className="sm:col-span-2 flex flex-col items-center text-center group hover-glow rounded-2xl p-6 border border-border/60">
                 <span className="w-14 h-14 rounded-2xl bg-primary/15 border border-primary/50 flex items-center justify-center mb-3 text-primary shadow-[0_0_20px_hsl(55_100%_60%/0.3)]"><Globe className="w-6 h-6" /></span>
                 <h3 className="text-base font-bold mb-1">Website</h3>
-                <p className="text-xs text-muted-foreground">aura-arenex1.lovable.app</p>
+                <p className="text-xs text-muted-foreground">arenextechworks.com</p>
               </a>
             </div>
           </div>

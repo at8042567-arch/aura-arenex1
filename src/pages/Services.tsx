@@ -1,4 +1,4 @@
-import heroLogo from "@/assets/hero-logo.png";
+import heroLogoAsset from "@/assets/hero-logo-3d.png.asset.json";
 import { NeonButton } from "@/components/site/NeonButton";
 import { Monitor, Briefcase, ShoppingCart, LayoutDashboard, Wrench, Sparkles, Check } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -55,7 +55,7 @@ export default function Services() {
           </div>
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-radial-glow blur-3xl" />
-            <img src={heroLogo} alt="Arenex 3D logo" loading="lazy" width={1024} height={1024} className="relative w-full max-w-[520px] mx-auto float-slow" />
+            <img src={heroLogoAsset.url} alt="Arenex Techworks 3D logo" loading="lazy" width={1280} height={1024} className="relative w-full max-w-[600px] mx-auto float-slow" />
           </div>
         </div>
       </section>
