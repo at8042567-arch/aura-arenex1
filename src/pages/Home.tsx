@@ -1,7 +1,7 @@
 import heroLogoAsset from "@/assets/hero-logo-3d.png.asset.json";
-import workLaptop from "@/assets/work-laptop.jpg";
-import workPerson from "@/assets/work-person.jpg";
-import workAbstract from "@/assets/work-abstract.jpg";
+import argonShot from "@/assets/argoncore-screenshot.png.asset.json";
+import sdsShot from "@/assets/sdsbuds-screenshot.png.asset.json";
+import cyberShot from "@/assets/cybercreatix-screenshot.png.asset.json";
 import { NeonButton } from "@/components/site/NeonButton";
 import { Box, Code2, Layers, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -61,9 +61,9 @@ export default function Home() {
       <section className="container py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="grid grid-cols-2 gap-4">
-            <img src={workLaptop} alt="Dark laptop with code" loading="lazy" width={768} height={768} className="scroll-reveal stagger-1 rounded-2xl row-span-2 h-full object-cover border border-border/50" />
-            <img src={workPerson} alt="Silhouette portrait" loading="lazy" width={512} height={512} className="scroll-reveal stagger-2 rounded-2xl object-cover h-full border border-border/50" />
-            <img src={workAbstract} alt="Abstract glow" loading="lazy" width={512} height={512} className="scroll-reveal stagger-3 rounded-2xl object-cover h-full border border-border/50" />
+            <img src={argonShot.url} alt="ArgonCore web application by Arenex Techworks" loading="lazy" className="scroll-reveal stagger-1 rounded-2xl row-span-2 h-full w-full object-cover border border-border/50" />
+            <img src={cyberShot.url} alt="CyberCreatix AI Hub website by Arenex Techworks" loading="lazy" className="scroll-reveal stagger-2 rounded-2xl object-cover h-full w-full border border-border/50" />
+            <img src={sdsShot.url} alt="SDS Buds business website by Arenex Techworks" loading="lazy" className="scroll-reveal stagger-3 rounded-2xl object-cover h-full w-full border border-border/50" />
           </div>
           <div className="scroll-reveal">
             <div className="text-xs uppercase tracking-[0.3em] text-secondary font-semibold mb-3">WHAT WE DO</div>
