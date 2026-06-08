@@ -1,4 +1,4 @@
-import pricingIcon from "@/assets/pricing-icon.jpg";
+import pricingTiersAsset from "@/assets/pricing-tiers.png.asset.json";
 import { NeonButton } from "@/components/site/NeonButton";
 import { Send, Rocket, Crown, Check, Shield } from "lucide-react";
 import { useState } from "react";
@@ -65,7 +65,7 @@ export default function Pricing() {
           </div>
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-radial-glow blur-3xl" />
-            <img src={pricingIcon} alt="Pricing dollar icon" loading="lazy" width={1024} height={1024} className="relative w-full max-w-[460px] mx-auto float-slow" />
+            <img src={pricingTiersAsset.url} alt="Arenex Techworks pricing tiers" loading="lazy" width={1280} height={1024} className="relative w-full max-w-[620px] mx-auto float-slow" />
           </div>
         </div>
       </section>
